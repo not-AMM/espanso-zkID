@@ -6,7 +6,7 @@ global_vars:
   - name: zk_time
     type: date
     params:
-      format: "%m%d%Y%H%M"
+      format: "%d%m%Y%H%M"
 
 matches:
   - trigger: ":id"
