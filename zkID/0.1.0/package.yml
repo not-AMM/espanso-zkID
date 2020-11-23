@@ -2,11 +2,14 @@
 name: zkID
 parent: default
 
+global_vars: 
+  - name: zk_time
+    type: date
+    params:
+      format: "%m%d%Y%H%M"
+
 matches:
   - trigger: ":id"
     replace: "zk_time"
-    vars: 
-      - name: zk_time
-        type: date
-        params:
-          format: "%m%d%Y%H%M"
+  - trigger: ":link"
+    replace: "[Link Text][{{zk_time}}]"
