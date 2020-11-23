@@ -20,9 +20,7 @@ matches:
     replace: "[$|$]({{clipboard}})"
     vars:
       - name: "clipboard"
-        type: "clipboard"
-        
+        type: "clipboard"  
 # Why not?
-matches:
   - trigger: ":flip"
     replace: "`(╯°□°）╯︵ ┻━┻`"
