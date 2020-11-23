@@ -1,1 +1,12 @@
+# Zettelkasten ID
+name: zkID
+parent: default
 
+matches:
+  - trigger: ":id"
+    replace: "zk_time"
+    vars: 
+      - name: zk_time
+        type: date
+        params:
+          format: "%m%d%Y%H%M"
