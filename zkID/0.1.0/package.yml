@@ -10,6 +10,6 @@ global_vars:
 
 matches:
   - trigger: ":id"
-    replace: "zk_time"
+    replace: "{{zk_time}}"
   - trigger: ":link"
     replace: "[Link Text][{{zk_time}}]"
