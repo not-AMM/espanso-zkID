@@ -13,3 +13,11 @@ matches:
     replace: "{{zk_time}}"
   - trigger: ":link"
     replace: "[Link Text][{{zk_time}}]"
+    
+# This is an extra feature for URLs in markdown
+matches:
+  - trigger: ":url"
+    replace: "[]({clipboard}})"
+    vars:
+      - name: "clipboard"
+        type: "clipboard"
